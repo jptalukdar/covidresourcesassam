@@ -1,6 +1,8 @@
 # covidresourcesassam
 Repo of covid resources in assam. Dynamically updated to website https://covidresourcesassam.firebaseapp.com/ 
 
+Any resources such as a organization or a supplier or a social media post , anything helpful to a patient is appreciated here. See submit resource to submit such resource.
+
 This is fight towards COVID 19 , extending any help to people of Assam
 
 [![Deploy to Firebase Hosting on merge](https://github.com/jptalukdar/covidresourcesassam/actions/workflows/firebase-hosting-production.yml/badge.svg)](https://github.com/jptalukdar/covidresourcesassam/actions/workflows/firebase-hosting-production.yml)
@@ -33,7 +35,9 @@ Eg Resource
 To report , please raise a issue at https://github.com/jptalukdar/covidresourcesassam/issues under label reportIssue
 
 ## Submit a new resource
-To submit a resource raise a issue at https://github.com/jptalukdar/covidresourcesassam/issues under label submitResource
+Submit your resource here: https://covidresourcesassam.firebaseapp.com/submit.html
+Or https://forms.gle/8NTA5bdtdWKCKufF8
+To submit a resource raise a issue at https://github.com/jptalukdar/covidresourcesassam/issues under label submitResource 
 
 ## Contribute
 
