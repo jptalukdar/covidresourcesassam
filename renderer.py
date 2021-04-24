@@ -1,7 +1,7 @@
 import yaml
 from jinja2 import Template
 import time
-
+import subprocess
 import pytz
 from datetime import datetime
 
@@ -31,29 +31,56 @@ class Cards():
     def writeFile(self,filename,data):
         with open(filename,'w') as fp:
             fp.write(data)
-        
+    
+    def getCurrentCommit(self):
+        return str(subprocess.check_output(['git', 'rev-parse', 'HEAD']).decode('utf-8')).strip().replace('\n','')
+    def getCurrentShortCommit(self):
+        return str(subprocess.check_output(['git', 'rev-parse', '--short' ,'HEAD']).decode('utf-8')).strip().replace('\n','')
     def generateCards(self):
         data = self.loadYaml(self.config.get('resources'))
+        data = data[::-1] ## Reverse the list
         cardtemplate = Template(self.readfile('template/card.j2'))
         
         renders = []
         for card in data:
             colours = {
                 'website' : 'purple',
-                'person' : 'green'
+                'person' : 'green',
+                'organization' : 'blue' 
             }
+            link = '#'
+            links = []
+            if card.get('link') != None:
+                links.append({
+                    'link' : card.get('link')
+                })
+            if card.get('phone') != None:
+                links.append({
+                    'link' : 'tel:{}'.format(card.get('phone')),
+                    'linktext' : 'Call'
+                })
+            if card.get('mail') != None:
+                links.append({
+                    'link' : 'mailto:{}'.format(card.get('mail')),
+                    'linktext' : 'Mail'
+                }) 
             renders.append(cardtemplate.render(
                 title=card.get('name'),
                 description = card.get('description'),
-                link= card.get('link','#'),
+                links= links,
                 colour = colours.get(card.get('type'),'blue')
             ))
         
         renderString = '\n'.join(renders)
 
         pageTemplate = Template(self.readfile('template/index.j2'))
-        pageTemplateString = pageTemplate.render(CARDS=renderString,date=self.getCurrentTime())
-
+        commit = self.getCurrentCommit()
+        pageTemplateString = pageTemplate.render(
+            CARDS=renderString,
+            date=self.getCurrentTime(),
+            commit=commit,
+            shortcommit = self.getCurrentShortCommit()
+            )
         self.writeFile('public/index.html',pageTemplateString)
 
 

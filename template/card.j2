@@ -2,10 +2,12 @@
     <div class="card {{colour}} darken-1">
         <div class="card-content white-text">
             <span class="card-title cardheader">{{title}}</span>
-                <p>{{description}}</p>
+                <p class='nomargin'>{{description}}</p>
         </div>
-        <div class="card-action">
-            <a href="{{link}}">Visit Link</a>
+        <div class="card-action cardaction">
+{% for linkgroup in links %}
+            <a href="{{linkgroup['link']}}">{{linkgroup['linktext'] | default('Visit')}}</a>
+{% endfor %}
         </div>
     </div>
 </div>
