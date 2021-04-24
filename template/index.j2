@@ -27,10 +27,17 @@
             }
             .cardheader{
                 font-family: 'Merriweather', serif;
+                color: yellow;
+            }
+            .cardaction {
+                  color: red;
+            }
+            .nomargin{
+                margin: 0;
             }
         </style>
     </head>
-    <body>
+    <body class='light-blue lighten-5'>
         <nav>
             <div class="nav-wrapper center">
                <p class="header" > COVID RESOURCES ASSAM </p>
@@ -45,7 +52,7 @@
         <footer class="page-footer">
             <div class="container">
               <div class="row">
-                <div class="col l6 s12">
+                <div class="col 8 s12">
                   <h5 class="white-text">Site Contacts</h5>
                   <p class="grey-text text-lighten-4">The resources list are collected from various sources in social media to help 
                       people of assam. Although efforts has been made to verify the authenticity but still might have crept into. Users are requested to verify the sources themselves. To report any link, please mail to <a href="mailto:jpt.linux@gmail.com"> jpt.linux@gmail.com </a>
@@ -55,8 +62,10 @@
             </div>
             <div class="footer-copyright">
                 <div class="container">
-                © 2021 Jyotiplaban
-                <a class="grey-text text-lighten-4 right" href="#!">Updated : {{date}}</a>
+                © 2021 <a href="https://github.com/jptalukdar/covidresourcesassam"> Covidresourcesassam </a>
+                    <div class='right'>
+                    Updated : {{date}} | Commit: <a href="https://github.com/jptalukdar/covidresourcesassam/commit/{{commit}}">{{shortcommit}}</a>
+                    </div>
                 </div>
               </div>
           </footer>
