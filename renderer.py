@@ -54,7 +54,7 @@ class Cards():
         pageTemplate = Template(self.readfile('template/index.j2'))
         pageTemplateString = pageTemplate.render(CARDS=renderString,date=self.getCurrentTime())
 
-        self.writeFile('src/index.html',pageTemplateString)
+        self.writeFile('public/index.html',pageTemplateString)
 
 
 if __name__ == '__main__':
