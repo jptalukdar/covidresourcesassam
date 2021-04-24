@@ -49,3 +49,21 @@
     Helping Hands | Krishna Das : 7002702935
   phone: 7002702935
   type: organization
+
+- name: Twitter handle of Health Minister of assam
+  description: |
+    Twitter handle of Health Minister of assam - Himanta Biswa Sarma . He shares important updates related to Covid Situation
+  link: https://twitter.com/himantabiswa
+  type: person
+
+- name: Groffers pan india resources
+  description: | 
+    Pan India resources for covid
+  link: https://docs.google.com/spreadsheets/d/12VqdKMk0eSUo8oRA4RcwnE1G4QFd-CRsSH5GGXwAaEU/edit#gid=149949356
+  type: organization
+
+- name: Central Helpline numbers
+  description: |
+    Central Helpline numbers | PDF
+  link: https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf
+  type: organization
