@@ -1,9 +1,3 @@
-- name: Rotaract Club Rongali
-  description: | 
-    Plasma contact | Rajesh Bhartia (President): 919706487320
-  phone: 919706487320
-  type: organization
-
 - name: Friends2support
   link: http://friends2support.org/
   description: Find blood donors around the world. Also can filter users for plasma donor
@@ -19,3 +13,39 @@
   description: The Assam Covid-19 Portal is a one-stop platform for authenticated data and news regarding the novel coronavirus situation in Assam.
   type: website
 
+- name: Rotaract Club Rongali
+  description: | 
+    Plasma contact | Rajesh Bhartia (President): 919706487320
+  phone: 919706487320
+  type: organization
+
+- name: Guwahati Branch of EIRC of ICAI with Lions Club
+  description: | 
+    Plasma contact | Ayush Saraf (Dr.) 9864822043
+  phone: 9864822043
+  type: organization
+
+- name: Marwari Yuva Manch
+  description: |
+    Priyank Jalan (9864822988)
+    Bijit Prakash (9854050155)
+  phone: 9864822988
+  type: organization
+
+- name: Lions Club Guwahati
+  description: | 
+    Pramod Hazarika: 9435148299
+  phone: 9435148299
+  type: organization
+
+- name: Covid Warriors Guwahati
+  description: | 
+    Covid Warriors Guwahati | 8638850077 | 9706339163 | 9365899109 | 9957544197
+  phone: 8638850077
+  type: organization
+
+- name: Helping Hands
+  description: | 
+    Helping Hands | Krishna Das : 7002702935
+  phone: 7002702935
+  type: organization
