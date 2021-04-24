@@ -3,7 +3,7 @@ Repo of covid resources in assam. Dynamically updated to website https://covidre
 
 This is fight towards COVID 19 , extending any help to people of Assam
 
-[![Deploy to Firebase Hosting on merge](https://github.com/jptalukdar/covidresourcesassam/actions/workflows/firebase-hosting-merge.yml/badge.svg?branch=master)](https://github.com/jptalukdar/covidresourcesassam/actions/workflows/firebase-hosting-merge.yml)
+[![Deploy to Firebase Hosting on merge](https://github.com/jptalukdar/covidresourcesassam/actions/workflows/firebase-hosting-production.yml/badge.svg)](https://github.com/jptalukdar/covidresourcesassam/actions/workflows/firebase-hosting-production.yml)
 
 ## Live Deployment
 
