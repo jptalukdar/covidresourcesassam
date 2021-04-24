@@ -1,0 +1,15 @@
+- name: Friends2support
+  link: http://friends2support.org/
+  description: Find blood donors around the world. Also can filter users for plasma donor
+  type: website
+
+- name: Covid warriors assam
+  link: https://covidwarriorsassam.wixsite.com/online
+  description: Site designed to keep track of plasma donors. User can reqest for info on plasma donors
+  type: website
+
+- name: GOV Central site for covid in assam
+  link: https://covid19.assam.gov.in/
+  description: The Assam Covid-19 Portal is a one-stop platform for authenticated data and news regarding the novel coronavirus situation in Assam.
+  type: website
+

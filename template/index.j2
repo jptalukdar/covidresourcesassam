@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+        <style>
+            .header{
+                margin: 0;
+                pad: 0;
+                color: white;
+                font-size: 2.5em;
+                font-family: 'Merriweather', serif;
+            }
+            .cardheader{
+                font-family: 'Merriweather', serif;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper center">
+               <p class="header" > COVID RESOURCES ASSAM </p>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row center">
+                {{CARDS}}
+            </div>
+        </div>
+
+        <footer class="page-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Site Contacts</h5>
+                  <p class="grey-text text-lighten-4">The resources list are collected from various sources in social media to help 
+                      people of assam. Although efforts has been made to verify the authenticity but still might have crept into. Users are requested to verify the sources themselves. To report any link, please mail to <a href="mailto:jpt.linux@gmail.com"> jpt.linux@gmail.com </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                © 2021 Jyotiplaban
+                <a class="grey-text text-lighten-4 right" href="#!">Updated : {{date}}</a>
+                </div>
+              </div>
+          </footer>
+    </body>
+</html>
