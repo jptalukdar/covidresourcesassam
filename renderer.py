@@ -4,7 +4,8 @@ import time
 import subprocess
 import pytz
 from datetime import datetime
-
+import requests
+import json
 class Cards():
     def __init__(self):
         self.config()
@@ -36,6 +37,14 @@ class Cards():
         return str(subprocess.check_output(['git', 'rev-parse', 'HEAD']).decode('utf-8')).strip().replace('\n','')
     def getCurrentShortCommit(self):
         return str(subprocess.check_output(['git', 'rev-parse', '--short' ,'HEAD']).decode('utf-8')).strip().replace('\n','')
+    def getTwitterCard(self,twitterurl):
+        try:
+            url = "https://publish.twitter.com/oembed?url={}".format(twitterurl)
+            response = requests.get(url)
+            data = json.loads(response.text)
+            return data['html']
+        except Exception:
+            return ''
     def generateCards(self):
         data = self.loadYaml(self.config.get('resources'))
         data = data[::-1] ## Reverse the list
@@ -64,9 +73,12 @@ class Cards():
                     'link' : 'mailto:{}'.format(card.get('mail')),
                     'linktext' : 'Mail'
                 }) 
+            description = card.get('description')
+            if card.get('type') == 'twitter':
+                description = description + '\n' + self.getTwitterCard(card.get('link'))
             renders.append(cardtemplate.render(
                 title=card.get('name'),
-                description = card.get('description'),
+                description = description,
                 links= links,
                 colour = colours.get(card.get('type'),'blue')
             ))
