@@ -35,3 +35,12 @@ To report , please raise a issue at https://github.com/jptalukdar/covidresources
 ## Submit a new resource
 To submit a resource raise a issue at https://github.com/jptalukdar/covidresourcesassam/issues under label submitResource
 
+## Contribute
+
+Fork the repo, Modify your changes , raise a Pull request against ``develop`` branch
+
+
+## Extending the project to other states
+
+Please clone the repository and maintain the resource list. 
+To Auto setup firebase hosting , visit: https://firebase.google.com/docs/hosting/github-integration?authuser=0
