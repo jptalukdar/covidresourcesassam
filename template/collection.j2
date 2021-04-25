@@ -1,0 +1,10 @@
+{% for linkgroup in links %}
+<div class="col s12 m6">
+    <div class="card {{colour}} darken-1">
+        <div class="card-content white-text">
+            <a href="{{linkgroup['link']}}" class='cardheader'>{{linkgroup['linktext']}}</a>
+        </div>
+
+    </div>
+</div>
+{% endfor %}
