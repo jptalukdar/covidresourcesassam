@@ -2,28 +2,33 @@
   link: http://friends2support.org/
   description: Find blood donors around the world. Also can filter users for plasma donor
   type: website
+  tags: blood, plasma
 
 - name: Covid warriors assam
   link: https://covidwarriorsassam.wixsite.com/online
   description: Site designed to keep track of plasma donors. User can reqest for info on plasma donors
   type: website
+  tags: plasma
 
 - name: Gov Central site for covid in assam
   link: https://covid19.assam.gov.in/
   description: The Assam Covid-19 Portal is a one-stop platform for authenticated data and news regarding the novel coronavirus situation in Assam.
   type: website
+  tags: info
 
 - name: Rotaract Club Rongali
   description: | 
     Plasma contact | Rajesh Bhartia (President): 919706487320
   phone: 919706487320
   type: organization
+  tags: organization
 
 - name: Guwahati Branch of EIRC of ICAI with Lions Club
   description: | 
     Plasma contact | Ayush Saraf (Dr.) 9864822043
   phone: 9864822043
   type: organization
+  tags: organization
 
 - name: Marwari Yuva Manch
   description: |
@@ -31,12 +36,14 @@
     Bijit Prakash (9854050155)
   phone: 9864822988
   type: organization
+  tags: organization
 
 - name: Lions Club Guwahati
   description: | 
     Pramod Hazarika: 9435148299
   phone: 9435148299
   type: organization
+  tags: organization
 
 - name: Covid Warriors NE
   description: | 
@@ -44,67 +51,81 @@
   phone: 8638850077
   link: https://www.instagram.com/covidwarriorsne/?utm_source=ig_embed
   type: organization
+  tags: organization
 
 - name: Helping Hands
   description: | 
     Helping Hands | Krishna Das : 7002702935
   phone: 7002702935
   type: organization
+  tags: organization
 
 - name: Twitter handle of Health Minister of assam
   description: |
     Twitter handle of Health Minister of assam - Himanta Biswa Sarma . He shares important updates related to Covid Situation
   link: https://twitter.com/himantabiswa
   type: person
+  tags: info
 
 - name: Groffers pan india resources
   description: | 
     Pan India resources for covid
   link: https://docs.google.com/spreadsheets/d/12VqdKMk0eSUo8oRA4RcwnE1G4QFd-CRsSH5GGXwAaEU/edit#gid=149949356
   type: organization
+  tags: remdesivir
 
 - name: Central Helpline numbers
   description: |
     Central Helpline numbers | PDF
   link: https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf
   type: organization
+  tags: info
 
 - name: Oxygen Cylinder Contacts
   description: |
     Contacts for #oxygencylinder in Assam:
   link: https://twitter.com/samanwayindia/status/1385824242806099968
   type: twitter
+  tags: oxygen
 
 - name: Social Media Find Engines 
   description: |
     A streaming site to find social media posts related to remdesivir injections, Hospital beds, Oxygen cylinders and plasma.
   link: https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/23?id=DASHBOARD_601b9e214c7a6b689d76f493
   type: website
+  tags: remdesivir , oxygen, plasma
 
 - name: Fridays for Future verified sources
   description: |
     This document primarily includes a list of verified contacts, websites and organizations to access hospital beds, covid medication, plasma donors, oxygen cylinders and meal deliveries in assam. The document is maintained by Fridays for future
   link: https://docs.google.com/document/d/1EPnXyMxEyf61M0c_J3JOBLhACzj8dT_-KRHx3CWNCtQ/edit
   type: document
+  tags: remdesivir , oxygen, plasma
 
 - name: Remdesivir distribution pan India
   description: |
       Document collected from https://linktr.ee/COVID19support.India
   type: document
   link: https://docs.google.com/spreadsheets/u/0/d/1J-m84rr-tV47wZrUKn41jlTTID5FNcMs5MwyYHt9fLU/htmlview
+  tags: remdesivir
 
 - name: Let India Breathe
   description: |
       Verified list of Covid Resources by Let India Breathe. Document collected from https://linktr.ee/COVID19support.India
   link: https://docs.google.com/document/d/16WeMKah7RXoB1gnqa9YXVTuWM4TR6hY9Qys48Pf8mCc/edit#heading=h.9mle8zpuxxui
   type: document
+  tags: remdesivir, Favirpiravir , Tocilizumab
 
 - name: Instagram - Let India Breathe
   description: |
       IG Handle for letindiabreathe.in
   link: https://www.instagram.com/letindiabreathe.in/?utm_source=ig_embed
+  type: instagram
+  tags: organization, info
 
 - name: Instagram - covid19help.in
   description: |
       IG Handle for Covid19help.in
   link: https://www.instagram.com/covid19help.in/
+  type: instagram
+  tags: organization, info

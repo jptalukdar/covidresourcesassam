@@ -45,18 +45,36 @@ class Cards():
             return data['html']
         except Exception:
             return ''
+    
+    def renderTemplate(self,template, cards, output):
+        commit = self.getCurrentCommit()
+        footer = Template(self.readfile('template/footer.j2'))
+        footerString = footer.render(
+            date=self.getCurrentTime(),
+            commit=commit,
+            shortcommit = self.getCurrentShortCommit()
+        )
+        pageTemplateString = template.render(
+            CARDS=cards,
+            footer = footerString
+            )
+        self.writeFile(output,pageTemplateString)
+        
     def generateCards(self):
         data = self.loadYaml(self.config.get('resources'))
         data = data[::-1] ## Reverse the list
         cardtemplate = Template(self.readfile('template/card.j2'))
-        
+        collectiontemplate = Template(self.readfile('template/collection.j2'))
+
         renders = []
-        for card in data:
-            colours = {
+        renderTags={}
+        colours = {
                 'website' : 'purple',
                 'person' : 'green',
                 'organization' : 'blue' 
             }
+        for card in data:
+            
             link = '#'
             links = []
             if card.get('link') != None:
@@ -76,24 +94,42 @@ class Cards():
             description = card.get('description')
             if card.get('type') == 'twitter':
                 description = description + '\n' + self.getTwitterCard(card.get('link'))
-            renders.append(cardtemplate.render(
+
+            __render = cardtemplate.render(
                 title=card.get('name'),
                 description = description,
                 links= links,
                 colour = colours.get(card.get('type'),'blue')
-            ))
-        
-        renderString = '\n'.join(renders)
-
-        pageTemplate = Template(self.readfile('template/index.j2'))
-        commit = self.getCurrentCommit()
-        pageTemplateString = pageTemplate.render(
-            CARDS=renderString,
-            date=self.getCurrentTime(),
-            commit=commit,
-            shortcommit = self.getCurrentShortCommit()
             )
-        self.writeFile('public/index.html',pageTemplateString)
+            renders.append(__render)
+            tags = card.get('tags','').split(',')
+            for tag in tags:
+                tag = tag.lower().strip().replace('\n','')
+                if tag == '' or tag == None:
+                    continue
+                if tag not in renderTags:
+                    renderTags[tag] = []
+                renderTags[tag].append(__render)
+        
+        
+        
+        pageTemplate = Template(self.readfile('template/tags.j2'))
+
+        collections = [
+            { 'link' : '{}.html'.format(tag) ,
+               'linktext' : tag.title().strip()
+                }
+            for tag in renderTags
+        ]
+        print(collections)
+        renderString = collectiontemplate.render(links=collections,colour='blue')
+        self.renderTemplate(pageTemplate,renderString,'public/index.html')
+        for tag in renderTags:
+            self.renderTemplate(pageTemplate,
+                '\n'.join(renderTags[tag]),
+                'public/{}.html'.format(tag)
+                )
+        
 
 
 if __name__ == '__main__':
