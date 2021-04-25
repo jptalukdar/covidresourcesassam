@@ -129,3 +129,28 @@
   link: https://www.instagram.com/covid19help.in/
   type: instagram
   tags: organization, info
+
+- name: Vaccination centres in Kamrup Metropolitan
+  description: |
+    Vaccination centres in Kamrup Metropolitan collected by Prag News
+  type: instagram
+  link: https://www.instagram.com/p/COCPkvznqR1/?utm_source=ig_web_copy_link
+  tags: vaccination
+
+- name: Oxygen Cylinders sources
+  description: |
+    Oxygen Cylinders sources collected by covidaidresources
+  link: https://www.instagram.com/p/COAAbeHpWjG/?utm_source=ig_web_copy_link
+  tags: oxygen
+
+- name: Vaccination Registration and appointment
+  description: |
+    Cowin Portal designed by Govt of India to facilitate the ease of booking vaccines
+  link: https://www.cowin.gov.in/home
+  tags: vaccination , info
+
+- name: District wise Telemedicine service
+  description: |
+    District wise Telemedicine service for providing appropriate medical guidance by NMO,Assam
+  link: https://www.instagram.com/p/CN8AXS1ni8N/?utm_source=ig_web_copy_link
+  tags: telemedicine , info

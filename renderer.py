@@ -121,7 +121,7 @@ class Cards():
                 }
             for tag in renderTags
         ]
-        print(collections)
+        #print(collections)
         renderString = collectiontemplate.render(links=collections,colour='blue')
         self.renderTemplate(pageTemplate,renderString,'public/index.html')
         for tag in renderTags:
