@@ -111,12 +111,12 @@
   tags: remdesivir
   source: https://linktr.ee/COVID19support.India
 
-- name: Let India Breathe
+- name: Pan India Covid resources Let India Breathe
   description: |
-      Verified list of Covid Resources by Let India Breathe. Document collected from https://linktr.ee/COVID19support.India
+      Verified list of Covid Resources such as plasma, oxygen, remdesivir etc by Let India Breathe. Document collected from https://linktr.ee/COVID19support.India
   link: https://docs.google.com/document/d/16WeMKah7RXoB1gnqa9YXVTuWM4TR6hY9Qys48Pf8mCc/edit#heading=h.9mle8zpuxxui
   type: document
-  tags: remdesivir, Favirpiravir , Tocilizumab
+  tags: remdesivir, Favirpiravir , Tocilizumab, plasma , oxygen
   source: https://linktr.ee/COVID19support.India
 
 - name: Instagram - Let India Breathe
@@ -167,4 +167,3 @@
   source: https://www.linkedin.com/posts/mebhaskardas_covidvolunteersassam-guwahati-assam-activity-6792024052358770688-sTT1
   tags: oxygen, meals, covidtest
   
-    

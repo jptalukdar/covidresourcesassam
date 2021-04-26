@@ -85,7 +85,7 @@ class Cards():
                 })
             if card.get('source') != None:
                 links.append({
-                    'link' : 'mailto:{}'.format(card.get('mail')),
+                    'link' : '{}'.format(card.get('source')),
                     'linktext' : 'Visit Source'
                 }) 
             if card.get('phone') != None:
