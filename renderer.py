@@ -6,6 +6,7 @@ import pytz
 from datetime import datetime
 import requests
 import json
+import shortuuid
 class Cards():
     def __init__(self):
         self.config()
@@ -79,8 +80,14 @@ class Cards():
             links = []
             if card.get('link') != None:
                 links.append({
-                    'link' : card.get('link')
+                    'link' : card.get('link'),
+                    'linktext' : 'Visit Link'
                 })
+            if card.get('source') != None:
+                links.append({
+                    'link' : 'mailto:{}'.format(card.get('mail')),
+                    'linktext' : 'Visit Source'
+                }) 
             if card.get('phone') != None:
                 links.append({
                     'link' : 'tel:{}'.format(card.get('phone')),
@@ -99,7 +106,8 @@ class Cards():
                 title=card.get('name'),
                 description = description,
                 links= links,
-                colour = colours.get(card.get('type'),'blue')
+                colour = colours.get(card.get('type'),'blue'),
+                cardid = shortuuid.uuid(str(links))
             )
             renders.append(__render)
             tags = card.get('tags','').split(',')
@@ -117,7 +125,8 @@ class Cards():
 
         collections = [
             { 'link' : '{}.html'.format(tag) ,
-               'linktext' : tag.title().strip()
+               'linktext' : tag.title().strip(),
+               'collectionid' : 'tag_{}'.format(tag)
                 }
             for tag in renderTags
         ]

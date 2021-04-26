@@ -65,4 +65,7 @@ node_modules/
 # dotenv environment variables file
 .env
 
+public/
+
+*.bak
 public/index.html
