@@ -47,7 +47,7 @@ class Cards():
         except Exception:
             return ''
     
-    def renderTemplate(self,template, cards, output):
+    def renderTemplate(self,template, cards, output,**kwargs):
         commit = self.getCurrentCommit()
         footer = Template(self.readfile('template/footer.j2'))
         footerString = footer.render(
@@ -57,7 +57,8 @@ class Cards():
         )
         pageTemplateString = template.render(
             CARDS=cards,
-            footer = footerString
+            footer = footerString,
+            **kwargs
             )
         self.writeFile(output,pageTemplateString)
         
@@ -121,8 +122,8 @@ class Cards():
         
         
         
-        pageTemplate = Template(self.readfile('template/tags.j2'))
-
+        tagpageTemplate = Template(self.readfile('template/tags.j2'))
+        indexPageTemplate = Template(self.readfile('template/index.j2'))
         collections = [
             { 'link' : '{}.html'.format(tag) ,
                'linktext' : tag.title().strip(),
@@ -132,11 +133,12 @@ class Cards():
         ]
         #print(collections)
         renderString = collectiontemplate.render(links=collections,colour='blue')
-        self.renderTemplate(pageTemplate,renderString,'public/index.html')
+        self.renderTemplate(indexPageTemplate,renderString,'public/index.html')
         for tag in renderTags:
-            self.renderTemplate(pageTemplate,
+            self.renderTemplate(tagpageTemplate,
                 '\n'.join(renderTags[tag]),
-                'public/{}.html'.format(tag)
+                'public/{}.html'.format(tag),
+                tag=tag
                 )
         
 

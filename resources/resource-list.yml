@@ -2,7 +2,7 @@
   link: http://friends2support.org/
   description: Find blood donors around the world. Also can filter users for plasma donor
   type: website
-  tags: blood, plasma
+  tags: blood, plasma , pan-india
 
 - name: Covid warriors assam
   link: https://covidwarriorsassam.wixsite.com/online
@@ -72,7 +72,7 @@
     Pan India resources for covid
   link: https://docs.google.com/spreadsheets/d/12VqdKMk0eSUo8oRA4RcwnE1G4QFd-CRsSH5GGXwAaEU/edit#gid=149949356
   type: organization
-  tags: remdesivir
+  tags: remdesivir, pan-india
   source: https://grofers.com/blog/covid-19-resource-bank/
 
 - name: Central Helpline numbers
@@ -80,7 +80,7 @@
     Central Helpline numbers | PDF
   link: https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf
   type: organization
-  tags: info
+  tags: info , pan-india
 
 - name: Oxygen Cylinder Contacts
   description: |
@@ -94,21 +94,21 @@
     A streaming site to find social media posts related to remdesivir injections, Hospital beds, Oxygen cylinders and plasma.
   link: https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/23?id=DASHBOARD_601b9e214c7a6b689d76f493
   type: website
-  tags: remdesivir , oxygen, plasma
+  tags: remdesivir , oxygen, plasma , pan-india
 
 - name: Fridays for Future verified sources
   description: |
     This document primarily includes a list of verified contacts, websites and organizations to access hospital beds, covid medication, plasma donors, oxygen cylinders and meal deliveries in assam. The document is maintained by Fridays for future
   link: https://docs.google.com/document/d/1EPnXyMxEyf61M0c_J3JOBLhACzj8dT_-KRHx3CWNCtQ/edit
   type: document
-  tags: remdesivir , oxygen, plasma
+  tags: remdesivir , oxygen, plasma , pan-india
 
 - name: Remdesivir distribution pan India
   description: |
       Document collected from https://linktr.ee/COVID19support.India
   type: document
   link: https://docs.google.com/spreadsheets/u/0/d/1J-m84rr-tV47wZrUKn41jlTTID5FNcMs5MwyYHt9fLU/htmlview
-  tags: remdesivir
+  tags: remdesivir , pan-india
   source: https://linktr.ee/COVID19support.India
 
 - name: Pan India Covid resources Let India Breathe
@@ -116,7 +116,7 @@
       Verified list of Covid Resources such as plasma, oxygen, remdesivir etc by Let India Breathe. Document collected from https://linktr.ee/COVID19support.India
   link: https://docs.google.com/document/d/16WeMKah7RXoB1gnqa9YXVTuWM4TR6hY9Qys48Pf8mCc/edit#heading=h.9mle8zpuxxui
   type: document
-  tags: remdesivir, Favirpiravir , Tocilizumab, plasma , oxygen
+  tags: remdesivir, Favirpiravir , Tocilizumab, plasma , oxygen , pan-india
   source: https://linktr.ee/COVID19support.India
 
 - name: Instagram - Let India Breathe
@@ -150,14 +150,14 @@
   description: |
     Cowin Portal designed by Govt of India to facilitate the ease of booking vaccines
   link: https://www.cowin.gov.in/home
-  tags: vaccination , info
+  tags: vaccination , info , pan-india
 
 - name: District wise Telemedicine service
   description: |
     District wise Telemedicine service for providing appropriate medical guidance by NMO,Assam
     Source: Instagram
   link: https://www.instagram.com/p/CN8AXS1ni8N/?utm_source=ig_web_copy_link
-  tags: telemedicine , info
+  tags: teleconsultation , info
 
 - name: Resources sheet by Volunteers accross Assam
   description: | 
@@ -167,3 +167,29 @@
   source: https://www.linkedin.com/posts/mebhaskardas_covidvolunteersassam-guwahati-assam-activity-6792024052358770688-sTT1
   tags: oxygen, meals, covidtest
   
+- name: Contacts of designated covid hospitals
+  description: |
+    Contacts of designated covid hospitals in Assam. Source - covid19.assam.gov.in
+  link: https://covid19.assam.gov.in/wp-content/uploads/2020/04/Designated-Hospitals-in-Districts-for-COVID-19.pdf
+  tags: hospitals, info
+
+- name: National TeleConsultation Service
+  description: |
+    National Teleconsultation Service of Ministry of Health and Family Welfare is onlineOPD service offered by a government. 
+    National Teleconsultation Service aims to provide healthcare services to patients in their homes.
+  
+  link: https://esanjeevaniopd.in/Register
+  tags: teleconsultation , pan-india
+
+- name: Pan India reddit thread for covid resources
+  description: |
+    Collated Resources for Covid-19 - Beds, Plasma, Oxygen, Vaccines, Medicines, Grocery etc.
+  link: https://www.reddit.com/r/india/comments/mtfegz/collated_resources_for_covid19_beds_plasma_oxygen/
+  tags: info , pan-india
+
+- name: Northeast covid resources by UnCut Team
+  description: |
+      Collated resources collected and maintained by UnCut Team
+  link: https://docs.google.com/spreadsheets/d/e/2PACX-1vRR1glENQvCEZN8H7PzCq3bjSr2bQIIodVOd2kPmGy-wD0JMIFTHXVj8eLr0gW0Ya9UAO7Fti6XTUiz/pubhtml?gid=321020211&single=true
+  source: https://www.theuncutteam.com/covid-northeast
+  tags: hospitals, oxygen, doctors, remdesivir 
