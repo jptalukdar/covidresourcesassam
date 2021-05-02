@@ -193,3 +193,23 @@
   link: https://docs.google.com/spreadsheets/d/e/2PACX-1vRR1glENQvCEZN8H7PzCq3bjSr2bQIIodVOd2kPmGy-wD0JMIFTHXVj8eLr0gW0Ya9UAO7Fti6XTUiz/pubhtml?gid=321020211&single=true
   source: https://www.theuncutteam.com/covid-northeast
   tags: hospitals, oxygen, doctors, remdesivir 
+
+- name: Covid Resources collected by Covid volunteers assam
+  description: |
+      COVID Volunteers Assam are individuals and groups (Covid Warriors NE) who have come together to help the citizens of Assam get access to essential COVID-related information and guidance easier and handy. Sheet contains leads to various Hospitals, Oxygen, Ambulance, Meals, Helplines, Doctors, Mental Health						
+  tags: Hospitals, Oxygen, Ambulance, Meals, Helplines, Doctors, Mental Health
+  link: https://docs.google.com/spreadsheets/d/1cMAASDH-dVsSxCl7UM-47SXVYZWTjSy39N-_L8E7rBk/edit#gid=1567858
+  source: https://www.instagram.com/p/CONuby4l5B_/?utm_source=ig_web_copy_link
+
+- name: Covid Volunteers Assam
+  description: |
+    COVID Volunteers Assam is a group of people who have come together to help our citizens in regard to making access to essential COVID-related information and guidance easier and handy. Our volunteers diligently work round the clock to collect, verify and update leads and contacts of COVID resources available in various regions of Assam.
+  link: https://www.instagram.com/covidvolunteersassam/
+  tags: info, organization
+
+- name: Ghy fights covid
+  description: App created by @nityajain__ containing leads to various resources
+  link: https://ghyfightscovid.in/
+  source: https://www.instagram.com/nityajain__/
+  tags: info
+
