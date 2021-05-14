@@ -213,3 +213,38 @@
   source: https://www.instagram.com/nityajain__/
   tags: info
 
+- name: Gplus covid resources
+  description: |
+    The Guwahati COVID Support Group is a non-for-profit initiative by G Plus and a group of individuals who believe that this war is supposed to be fought by everyone, in unison.
+  link: https://covid.guwahatiplus.com/
+  tags: info, organization
+
+- name: List of medical oxygen supplier in Guwahati
+  description: |
+    List of medical oxygen supplier in Guwahati collected by GPLUS
+  link: https://covid.guwahatiplus.com/oxygen-cylinders
+  source: https://covid.guwahatiplus.com/
+  tags: oxygen
+
+- name: Doctors for home consultancy
+  description: |
+    List of doctors for home consultancy collected by GPLUS
+  link: https://covid.guwahatiplus.com/doctors
+  source: https://covid.guwahatiplus.com/
+  tags: doctors
+
+- name: Covid Army
+  description: A tweet aggregator for resources based on location.
+  link: https://covid.army/
+  tags: info, organization
+
+- name: Resources aggregation by Covid Assam Network
+  description: Resources aggregation by Covid Assam Network
+  link: https://docs.google.com/spreadsheets/d/1mjociVipWW5AM2mu6fKuicOb_aPkHxF6zZcB4QECsmM/edit#gid=0
+  source: https://linktr.ee/covidassamnetwork
+  tags: Plasma, blood, oxygen, meals, helpline, ambulance, hospitals
+
+- name: Oxygen cylinder list - pan assam
+  description: Oxygen Cylinder resources Verified by covid assam network
+  link: https://www.instagram.com/p/COx1VUqHjxj/
+  tags: oxygen
